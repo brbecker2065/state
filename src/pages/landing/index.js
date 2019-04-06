@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import MyHeader from "../../components/header";
+//import MyHeader from "../../components/header";
 import "./styles.css";
 
 class LandingPage extends Component {
