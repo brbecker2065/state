@@ -1,0 +1,10 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+flex-direction: column;
+}
+.main {
+    display: flex;
+    flex-grow: 4
+}
+.main-left

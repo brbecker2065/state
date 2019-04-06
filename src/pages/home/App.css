@@ -1,0 +1,22 @@
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+}
+main {
+  background-color: green;
+  flex-direction: column;
+  flex-grow: 3;
+}
+footer {
+  background-color: red;
+  flex-direction: column;
+  flex-grow: 1;
+}
