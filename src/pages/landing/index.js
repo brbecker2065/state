@@ -7,9 +7,8 @@ class LandingPage extends Component {
     return (
       <div className="Landing-page">
         <div className="main">1</div>
-        <div id="main-left" /></div>
-        <div id='main-right' /></div>
-
+        <div id="main-left" />
+        <div id="main-right" />
       </div>
     );
   }
