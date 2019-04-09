@@ -1,15 +1,22 @@
 .home-page {
-  min-height: 10vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 header {
-  background-color: blue;
   display: flex;
+  flex-direction: row;
   min-height: 25vh;
-  flex-direction: column;
-  flex-grow: 1;
 }
+.row-left {
+  flex: 1 1 auto;
+  background-color: yellow;
+}
+.row-right {
+  flex: 1 1 auto;
+  background-color: orange;
+}
+
 main {
   background-color: green;
   min-height: 60vh;

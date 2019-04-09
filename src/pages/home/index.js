@@ -6,7 +6,10 @@ class HomePage extends Component {
   render() {
     return (
       <div className="App">
-        <header>I am in the header</header>
+        <header>
+          <div className="row-left">i am the header</div>
+          <div className="row-right">right</div>
+        </header>
         <main>i am in the main</main>
         <footer>i am in the footer</footer>
       </div>
