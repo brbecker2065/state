@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
 }
+.head {
+  min-height: 10;
+}
+
 .main {
   display: flex;
   min-height: 50vh;
@@ -10,7 +14,9 @@
 }
 #main-left {
   flex-grow: 1 1 auto;
+  background-color: blue;
 }
 #main-right {
   flex-grow: 1 1 auto;
+  background-color: red;
 }
