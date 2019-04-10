@@ -2,21 +2,25 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: purple;
 }
-.head {
+header {
   min-height: 10;
+  background-color: yellow;
 }
 
-.main {
+main {
   display: flex;
-  min-height: 50vh;
+  min-height: 90vh;
   flex-direction: row;
+  background-color: pink;
 }
-#main-left {
+main-left {
   flex-grow: 1 1 auto;
   background-color: blue;
+  justify-content: left;
 }
-#main-right {
+main-right {
   flex-grow: 1 1 auto;
   background-color: red;
 }
