@@ -11,29 +11,15 @@ class App extends Component {
       page: "Home"
     };
   }
-  RouterLinks = () => {
-    return (
-      <div>
-        <label>
-          <input
-            type="radio"
-            name="pageChanger"
-            value="Home"
-            onClick={this.updatePage}
-          />
-          Home
-        </label>
-        <label>
-          <input
-            type="radio"
-            name="pageChanger"
-            value="Landing"
-            onClick={this.updatePage}
-          />
-          Landing
-        </label>
-      </div>
-    );
+  renderMainContent = () => {
+    switch (this.state.page) {
+      case "Home":
+        return <HomePage />;
+      case "Landing":
+        return <LandingPage />;
+      default:
+        return <div>Oh no,page not found!!!</div>;
+    }
   };
 
   updatePage = event => {
@@ -42,23 +28,35 @@ class App extends Component {
   };
 
   render() {
-    switch (this.state.page) {
-      case "Home":
-        return (
-          <div>
-            {this.RouterLinks()}
-            <HomePage />
-          </div>
-        );
-      case "Landing":
-        return (
-          <div>
-            <LandingPage />
-          </div>
-        );
-    }
-    //return <HomePage />;
-    //return <LandingPage />;
+    return (
+      <div className="App">
+        <div>
+          <label>
+            <input
+              type="radio"
+              name="pageChanger"
+              value="Home"
+              onClick={this.updatePage}
+            />
+            Home
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="pageChanger"
+              value="Landing"
+              onClick={this.updatePage}
+            />
+            Landing
+          </label>
+        </div>
+        {this.renderMainContent()}
+      </div>
+    );
   }
 }
+
+//return <HomePage />;
+//return <LandingPage />;
+
 export default App;

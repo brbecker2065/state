@@ -1,26 +1,24 @@
-.landing-page {
-  min-height: 100vh;
+.Landing-page {
   display: flex;
-  flex-direction: column;
-  background-color: purple;
+  flex-direction: row;
 }
-header {
-  min-height: 10;
-  background-color: yellow;
+.header {
+  background-color: coral;
 }
 
-main {
+.main {
   display: flex;
-  min-height: 90vh;
+
+  align-items: stretch;
   flex-direction: row;
-  background-color: pink;
 }
-main-left {
+.main-left {
   flex-grow: 1 1 auto;
+  align-items: stretch;
   background-color: blue;
-  justify-content: left;
 }
-main-right {
-  flex-grow: 1 1 auto;
-  background-color: red;
+.main-right {
+  flex-grow: 3;
+
+  background-color: aqua;
 }

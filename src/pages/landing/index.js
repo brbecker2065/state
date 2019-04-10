@@ -6,9 +6,11 @@ class LandingPage extends Component {
   render() {
     return (
       <div className="Landing-page">
-        <div className="main">1</div>
-        <div id="main-left">left</div>
-        <div id="main-right">right</div>
+        <div className="header">hi </div>
+        <div className="main">
+          <div className="main-left">left</div>
+          <div className="main-right">right</div>
+        </div>
       </div>
     );
   }
